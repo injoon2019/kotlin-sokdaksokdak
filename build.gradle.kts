@@ -26,7 +26,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.cloud:spring-cloud-starter")
 	runtimeOnly("com.h2database:h2")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.kotest", "kotest-runner-junit5", "5.2.3")
 }
 
 dependencyManagement {
