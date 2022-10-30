@@ -1,4 +1,4 @@
-package com.example.sokdak.user.domain
+package com.example.sokdak.member.domain
 
 import javax.persistence.*
 
@@ -11,7 +11,7 @@ class Member(
     var password: Password,
 
     @Enumerated(EnumType.STRING)
-    var memberRole: MemberRole =  MemberRole.USER,
+    var memberRole: MemberRole = MemberRole.USER,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

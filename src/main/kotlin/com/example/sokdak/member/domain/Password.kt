@@ -1,7 +1,7 @@
-package com.example.sokdak.user.domain
+package com.example.sokdak.member.domain
 
-import com.example.sokdak.user.exception.PasswordFormatException
-import com.example.sokdak.user.exception.UsernameFormatException
+import com.example.sokdak.member.exception.PasswordFormatException
+import com.example.sokdak.member.exception.UsernameFormatException
 import java.util.regex.Pattern
 import javax.persistence.Column
 import javax.persistence.Embeddable

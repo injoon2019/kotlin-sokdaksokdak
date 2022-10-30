@@ -1,6 +1,7 @@
 package com.example.sokdak.user.domain
 
-import com.example.sokdak.user.exception.UsernameFormatException
+import com.example.sokdak.member.domain.Membername
+import com.example.sokdak.member.exception.UsernameFormatException
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource

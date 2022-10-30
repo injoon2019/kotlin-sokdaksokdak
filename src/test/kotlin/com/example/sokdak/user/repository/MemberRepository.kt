@@ -1,9 +1,10 @@
 package com.example.sokdak.user.repository
 
-import com.example.sokdak.user.domain.Password
-import com.example.sokdak.user.domain.Member
-import com.example.sokdak.user.domain.MemberRole
-import com.example.sokdak.user.domain.Membername
+import com.example.sokdak.member.domain.Password
+import com.example.sokdak.member.domain.Member
+import com.example.sokdak.member.domain.MemberRole
+import com.example.sokdak.member.domain.Membername
+import com.example.sokdak.member.repository.MemberRepository
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

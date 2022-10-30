@@ -1,4 +1,4 @@
-package com.example.sokdak.user.exception
+package com.example.sokdak.member.exception
 
 import java.lang.RuntimeException
 

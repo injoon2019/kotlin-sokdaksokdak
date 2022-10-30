@@ -1,4 +1,4 @@
-package com.example.sokdak.user.domain
+package com.example.sokdak.member.domain
 
 enum class MemberRole {
     USER,
