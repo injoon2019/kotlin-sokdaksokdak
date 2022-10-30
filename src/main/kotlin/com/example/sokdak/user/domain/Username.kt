@@ -2,13 +2,14 @@ package com.example.sokdak.user.domain
 
 import com.example.sokdak.user.exception.UsernameFormatException
 import java.util.regex.Pattern
+import javax.persistence.Column
 import javax.persistence.Embeddable
 
 @Embeddable
 class Username(
+    @Column(name = "username")
     var value: String
 ) {
-
     init {
         if (value.length < MIN_LENGTH || value.length > MAX_LENGTH || !PATTERN.matcher(value).matches()) {
             throw UsernameFormatException()
