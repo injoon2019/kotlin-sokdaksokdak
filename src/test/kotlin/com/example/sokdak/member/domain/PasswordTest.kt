@@ -1,6 +1,5 @@
-package com.example.sokdak.user.domain
+package com.example.sokdak.member.domain
 
-import com.example.sokdak.member.domain.Password
 import com.example.sokdak.member.exception.PasswordFormatException
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

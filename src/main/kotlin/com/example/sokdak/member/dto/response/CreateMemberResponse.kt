@@ -3,8 +3,8 @@ package com.example.sokdak.member.dto.response
 import com.example.sokdak.member.domain.Member
 
 class CreateMemberResponse(
-    id: Long,
-    memberName: String
+    val id: Long,
+    val memberName: String
 ) {
 
     companion object {
