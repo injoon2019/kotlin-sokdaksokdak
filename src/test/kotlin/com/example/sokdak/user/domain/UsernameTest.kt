@@ -12,7 +12,7 @@ class UsernameTest {
     fun `유저의 아이디는 숫자와 영문만을 포함한 4자 이상 16자가 아니면 예외가 발생한다`(name: String) {
 
         assertThrows<UsernameFormatException> {
-            Username(name)
+            Membername(name)
         }
     }
 }

@@ -13,12 +13,9 @@ class Password(
 ) {
 
     init {
-        if (!PATTERN.matcher(value).matches()) {
+        if (value.length < 1) {
             throw PasswordFormatException()
         }
     }
 
-    companion object {
-        val PATTERN = Pattern.compile("Pattern.compile(\"^(?=.*[A-Za-z])(?=.*\\\\d)(?=.*[@\$!%*#?&])[A-Za-z\\\\d@\$!%*#?&]{8,20}\$\")")
-    }
 }

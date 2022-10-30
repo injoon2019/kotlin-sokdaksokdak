@@ -6,8 +6,8 @@ import javax.persistence.Column
 import javax.persistence.Embeddable
 
 @Embeddable
-class Username(
-    @Column(name = "username")
+class Membername(
+    @Column(name = "name")
     var value: String
 ) {
     init {
