@@ -5,6 +5,6 @@ enum class CacheType(
     val expiredAfterWrite: Long,
     val maximumSize: Long,
 ) {
-    USER_PROFILE("userProfile", 60, 1000),
+    USER_PROFILE("member", 60, 1000),
     ;
 }

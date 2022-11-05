@@ -33,12 +33,7 @@ class MemberAcceptanceTest(
     fun `캐시 테스트`() {
         val createMemberRequest = CreateMemberRequest("thor", "Abcd123!")
 
-        val response = RestAssured.given().port(port).log().all()
-            .body(createMemberRequest)
-            .contentType(MediaType.APPLICATION_JSON_VALUE)
-            .When().post("/members/signup")
-            .then().log().all()
-            .extract()
+        signUp(createMemberRequest)
 
         for(i: Int in 1..1000) {
             val response = RestAssured.given().port(port).log().all()
@@ -48,6 +43,15 @@ class MemberAcceptanceTest(
                 .then().log().all()
                 .extract()
         }
+    }
+
+    private fun signUp(createMemberRequest: CreateMemberRequest) {
+        val response = RestAssured.given().port(port).log().all()
+            .body(createMemberRequest)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .When().post("/members/signup")
+            .then().log().all()
+            .extract()
     }
 }
 

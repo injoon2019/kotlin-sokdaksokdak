@@ -1,12 +1,12 @@
 package com.example.sokdak.member.dto.response
 
 import com.example.sokdak.member.domain.Member
-import com.example.sokdak.member.domain.MemberRole
+import com.example.sokdak.member.domain.Role
 
 class FindMemberResponse(
     val id: Long,
     val memberName: String,
-    val role: MemberRole
+    val role: Role
 ) {
 
     companion object {
@@ -14,7 +14,7 @@ class FindMemberResponse(
             return FindMemberResponse(
                 id = member.memberId!!,
                 memberName = member.memberName.toString(),
-                role = member.memberRole,
+                role = member.role,
             )
         }
     }
