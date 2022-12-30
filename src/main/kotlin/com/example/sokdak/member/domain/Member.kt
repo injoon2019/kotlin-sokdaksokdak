@@ -1,7 +1,9 @@
 package com.example.sokdak.member.domain
 
+import org.hibernate.envers.Audited
 import javax.persistence.*
 
+@Audited
 @Entity
 class Member(
     @Embedded

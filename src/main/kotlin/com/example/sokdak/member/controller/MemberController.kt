@@ -1,6 +1,8 @@
 package com.example.sokdak.member.controller
 
+import com.example.sokdak.member.dto.request.ChangeRoleRequest
 import com.example.sokdak.member.dto.request.CreateMemberRequest
+import com.example.sokdak.member.dto.response.ChangeRoleResponse
 import com.example.sokdak.member.dto.response.CreateMemberResponse
 import com.example.sokdak.member.dto.response.FindMemberResponse
 import com.example.sokdak.member.service.MemberService
@@ -24,5 +26,10 @@ class MemberController(
     @GetMapping("/{id}")
     fun findMemberById(@PathVariable id: Long): ResponseEntity<FindMemberResponse> {
         return ResponseEntity.ok(memberService.findMemberById(id))
+    }
+
+    @PatchMapping("/role")
+    fun changeRole(@RequestBody request: ChangeRoleRequest): ResponseEntity<ChangeRoleResponse> {
+        return ResponseEntity.ok(memberService.changeRole(request))
     }
 }
